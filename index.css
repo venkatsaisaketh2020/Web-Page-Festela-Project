@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 95px;
+    box-shadow: 0px 1px 10px 0px #ccc;
+}
+header > article{
+    width:  80%;
+    height: inherit;
+    margin:  0px auto;
+    display: flex;
+    
+}
+.logoBlock{
+    flex-basis: 15%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logoBlock > h2{
+font-size: 32px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: 100;
+letter-spacing: 1.3px;
+color: blue;
+}
+.logoBlock > p{
+font-size: 13px;
+color: blue;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+letter-spacing: 2px;
+}
+.menuLinks{
+    flex-basis: 70%;
+    height: inherit;
+}
+.menuLinks > ul{
+    height: inherit;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menuLinks > ul > li > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+}
+.menuLinks > ul > li:last-child a{
+    font-size: 22px;
+}
+.flagIcons{
+    flex-basis: 15%;
+    height: inherit;
+}
+.flagIcons > ul{
+     height: inherit;
+     list-style-type: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.flagIcons > ul > li:first-child{
+    border-right: 1.5px solid #ccc;
+}
+.flagIcons > ul > li >img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+main{
+    width: 100%;
+    height: 90vh;
+}
+main > article{
+ width: 80%;
+ height: inherit;
+ margin: 0 auto;
+ display: flex;
+}
+.content{
+    flex-basis:50% ;
+    height: inherit;
+    position: relative;
+}
+.content > h1:first-child{
+    font-size: 65px;
+    color: yellow; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    right: -30px ;
+    top: 96px;
+    z-index: 5;
+}
+.content > h1:nth-child(2){
+    font-size: 62px;
+    color: blue; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    right: -50px ;
+    top: 175px;
+    z-index: 5;
+}
+.content > button{
+    padding: 20px 120px;
+    position: absolute;
+    top: 340px;
+    right: 108px;
+    background-color: transparent;
+    border: 2px solid blue;
+    color: blue;
+    font-size: 19px;
+}
+.imageBlock{
+    flex-basis: 50% ;
+    height: inherit;
+    position: relative;
+}
+.box1 , .box2{
+    width: 350px;
+    height: 450px;
+}
+.box1{
+    background-color: green;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+}
+.box1 > img{
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+}
+.box2{
+    background-color: yellow;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
